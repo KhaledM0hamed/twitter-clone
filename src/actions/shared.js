@@ -3,10 +3,10 @@ import { receiveTweets } from './tweets'
 import { receiveUsers} from './users'
 import { setAuthedUser } from './authedUser'
 
-const AUTHED_ID = 'khaled'
+const AUTHED_ID = 'tylermcginnis'
 
 export function handleInitialData () {
-    return (dispatch) => {
+    return (dispatch) => {   // ?????????
         return getInitialData()
             .then( ({ users, tweets }) => {
                 dispatch(receiveUsers(users))
